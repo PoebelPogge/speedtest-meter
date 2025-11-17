@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 
 # Dein Setup-Script ausführen (Paketquellen erweitern)
 # Den Link ersetzt du durch deinen echten
-RUN curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+RUN curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | bash
 
 # Danach kannst du aus den neuen Quellen installieren
 RUN apt-get update && apt-get install -y \
