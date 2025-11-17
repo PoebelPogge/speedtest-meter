@@ -39,6 +39,6 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner.toLowerCase() }}/speedtest-monitor:latest
-            ghcr.io/${{ github.repository_owner.toLowerCase() }}/speedtest-monitor:${{ github.sha }}
+            ghcr.io/poebelpogge/speedtest-monitor:latest
+            ghcr.io/poebelpogge/speedtest-monitor:${{ github.sha }}
           platforms: linux/amd64
